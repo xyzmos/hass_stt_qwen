@@ -1,0 +1,36 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "连接到阿里云 Qwen ASR",
+        "description": "请输入您的阿里云 DashScope API 信息。",
+        "data": {
+          "api_key": "API 密钥",
+          "model": "模型",
+          "region": "区域"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "连接失败",
+      "invalid_auth": "无效的身份验证"
+    },
+    "abort": {
+      "already_configured": "服务已配置"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Qwen ASR 选项",
+        "data": {
+          "api_url": "WebSocket 接入点（可选）",
+          "enable_server_vad": "启用 Server VAD",
+          "vad_threshold": "VAD 阈值",
+          "vad_silence_duration_ms": "VAD 静默时长（毫秒）",
+          "timeout": "超时（秒）"
+        }
+      }
+    }
+  }
+}

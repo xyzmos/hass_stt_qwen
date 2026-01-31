@@ -1,0 +1,36 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Qwen ASR",
+        "description": "Enter your Alibaba Cloud DashScope API details.",
+        "data": {
+          "api_key": "API Key",
+          "model": "Model",
+          "region": "Region"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication"
+    },
+    "abort": {
+      "already_configured": "Service is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Qwen ASR options",
+        "data": {
+          "api_url": "WebSocket endpoint (optional)",
+          "enable_server_vad": "Enable Server VAD",
+          "vad_threshold": "VAD threshold",
+          "vad_silence_duration_ms": "VAD silence duration (ms)",
+          "timeout": "Timeout (seconds)"
+        }
+      }
+    }
+  }
+}

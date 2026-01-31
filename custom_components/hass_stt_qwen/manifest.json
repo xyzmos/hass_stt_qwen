@@ -1,10 +1,10 @@
 {
   "domain": "hass_stt_qwen",
   "name": "阿里通义千问语音识别",
-  "codeowners": ["@CircleLiu"],
+  "codeowners": ["@xyzmos"],
   "config_flow": true,
   "documentation": "https://bbs.nextrt.com/d/2-home-assistant-a-li-yun-tong-yi-qian-wen-stt-yu-yin-shi-bie-cha-jian",
   "iot_class": "cloud_push",
-  "issue_tracker": "https://bbs.nextrt.com/d/2-home-assistant-a-li-yun-tong-yi-qian-wen-stt-yu-yin-shi-bie-cha-jian",
-  "version": "0.1.0"
+  "issue_tracker": "https://github.com/xyzmos/hass_stt_qwen/issues",
+  "version": "1.0"
 }

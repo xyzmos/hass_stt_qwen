@@ -16,9 +16,16 @@
 ### 方法一：手动安装
 
 1. 下载本项目代码。
-2. 将 `hass_stt_qwen` 文件夹复制到您的 Home Assistant 配置目录下的 `custom_components` 文件夹中。
+2. 将 `/custom_components/`下的`hass_stt_qwen` 文件夹复制到您的 Home Assistant 配置目录下的 `custom_components` 文件夹中。
    - 最终路径应为：`/config/custom_components/hass_stt_qwen/`
 3. 重启 Home Assistant。
+
+### 方法二：HACS 安装（推荐）
+
+1. 确保你已经在 Home Assistant 中安装并配置了 HACS（Home Assistant Community Store）。
+2. 点击 HACS 界面左上角的菜单，选择 `自定义仓库（Custom repositories）`，在弹出的窗口中输入仓库地址 `https://github.com/xyzmos/hass_stt_qwen`，类别选择 `集成`，然后点击 `添加`。之后再搜索 `阿里通义千问语音识别` 即可找到。
+3. 选择 `阿里通义千问语音识别` 集成，点击 `下载此存储库`。
+4. 下载完成后，重启 Home Assistant。
 
 ## 配置指南
 
@@ -54,7 +61,4 @@ A: 通义千问 Qwen ASR 支持中文、英文、粤语、日语等多种语言�
 
 **Q: 遇到连接失败怎么办？**
 A: 请检查 API Key 是否正确，以及网络连接是否正常。如果您在海外，请尝试切换到新加坡区域。
-
-**Q: 如何调整 VAD/超时/接入点？**
-A: 在集成的“选项”里可以配置自定义 WebSocket 接入点、是否启用 Server VAD、VAD 参数与超时。
 
